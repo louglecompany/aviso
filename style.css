@@ -13,6 +13,7 @@ body {
     margin: 50px auto;
     background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo com opacidade */
     border-radius: 10px;
+    top:40%;
 }
 
 h2 {
