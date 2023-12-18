@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento</title>
+    <script>
+        // Verifica a largura da tela ao carregar a página
+        window.onload = function () {
+            redirecionarSeNecessario();
+        };
+
+        // Verifica a largura da tela ao redimensionar a janela
+        window.onresize = function () {
+            redirecionarSeNecessario();
+        };
+
+        function redirecionarSeNecessario() {
+            // Obtém a largura da tela
+            var larguraTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            // Verifica se a largura é menor ou igual a 600 pixels
+            if (larguraTela > 600) {
+                // Redireciona para o YouTube
+                window.location.href = "https://www.youtube.com";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="aviso">
+        <h2>Para melhor experiência, recomendamos que acesse nosso site <br>
+        através de um notebook ou desktop.</h2>
+        <button onclick="location.href='./escolha/index.html'">Sou teimoso</button>
+        </div>
+</body>
+</html>
